@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Toolkit</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/tools.css">
+</head>
+<body>
+    <header>
+        <h1>Developer Toolkit</h1>
+        <nav>
+            <ul>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/docs.html">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tools">
+            <h2>Tools</h2>
+            <div class="tool" id="json-formatter">
+                <h3>JSON Formatter</h3>
+                <textarea id="json-input" placeholder="Enter JSON here..."></textarea>
+                <button id="format-json">Format JSON</button>
+                <pre id="json-output"></pre>
+            </div>
+            <div class="tool" id="qr-generator">
+                <h3>QR Code Generator</h3>
+                <input type="text" id="qr-input" placeholder="Enter text or URL...">
+                <button id="generate-qr">Generate QR Code</button>
+                <div id="qr-output"></div>
+            </div>
+            <!-- Additional tools will be added here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Developer Toolkit. All rights reserved.</p>
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tools/converters/json-formatter.js"></script>
+    <script src="js/tools/generators/qr-generator.js"></script>
+    <!-- Additional script files will be included here -->
+</body>
+</html>
